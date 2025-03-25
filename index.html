@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .options button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2>MCQ Quiz</h2>
+
+    <!-- Question 1 -->
+    <div class="question">1. What is the full form of HTML?</div>
+    <div class="options">
+        <button onclick="right(1)">A) Hypertext Markup Language</button>
+        <button onclick="wrong(1)">B) Hyertext Markup Language</button>
+        <button onclick="wrong(1)">C) Hypertext Mrkup Language</button>
+        <button onclick="wrong(1)">D) Hypertext Markup Languages</button>
+    </div>
+    <p id="result1" class="result"></p>
+
+    <!-- Question 2 -->
+    <div class="question">2. What does CSS stand for?</div>
+    <div class="options">
+        <button onclick="right(2)">A) Cascading Style Sheets</button>
+        <button onclick="wrong(2)">B) Computer Style Sheets</button>
+        <button onclick="wrong(2)">C) Colorful Style Sheets</button>
+        <button onclick="wrong(2)">D) Creative Style Sheets</button>
+    </div>
+    <p id="result2" class="result"></p>
+
+    <!-- Question 3 -->
+    <div class="question">3. Which programming language is used for web development?</div>
+    <div class="options">
+        <button onclick="right(3)">A) JavaScript</button>
+        <button onclick="wrong(3)">B) Python</button>
+        <button onclick="wrong(3)">C) C++</button>
+        <button onclick="wrong(3)">D) Java</button>
+    </div>
+    <p id="result3" class="result"></p>
+
+</div>
+
+<script>
+    function right(questionNumber) {
+        document.getElementById("result" + questionNumber).innerText = "✅ Correct!";
+        document.getElementById("result" + questionNumber).style.color = "green";
+    }
+
+    function wrong(questionNumber) {
+        document.getElementById("result" + questionNumber).innerText = "❌ Incorrect! Try again.";
+        document.getElementById("result" + questionNumber).style.color = "red";
+    }
+</script>
+
+</body>
+</html>
