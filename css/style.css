@@ -47,3 +47,46 @@ h2 {
   font-weight: bold;
   margin-top: 15px;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.quiz-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.question {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.options button:hover {
+  background-color: #d0d0d0;
+}
+.result {
+  height: 20px;
+  margin: 5px 0 15px 0;
+  font-weight: bold;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
