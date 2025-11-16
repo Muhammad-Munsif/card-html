@@ -888,7 +888,7 @@
         .info-panel {
           grid-template-columns: repeat(2, 1fr);
         }
-        
+
         .footer-content {
           grid-template-columns: 1fr 1fr;
         }
@@ -903,7 +903,7 @@
         .hero h1 {
           font-size: 3rem;
         }
-        
+
         .footer-content {
           gap: 2rem;
         }
@@ -959,12 +959,12 @@
         .section {
           scroll-margin-top: 80px;
         }
-        
+
         .footer-content {
           grid-template-columns: 1fr;
           text-align: center;
         }
-        
+
         .footer-info,
         .footer-links,
         .footer-contact {
@@ -1560,12 +1560,13 @@
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
-              const headerHeight = document.querySelector('header').offsetHeight;
+              const headerHeight =
+                document.querySelector("header").offsetHeight;
               const targetPosition = target.offsetTop - headerHeight - 20;
-              
+
               window.scrollTo({
                 top: targetPosition,
-                behavior: 'smooth'
+                behavior: "smooth",
               });
             }
           }
@@ -1578,7 +1579,7 @@
 
       window.addEventListener("scroll", () => {
         let current = "";
-        const headerHeight = document.querySelector('header').offsetHeight;
+        const headerHeight = document.querySelector("header").offsetHeight;
 
         sections.forEach((section) => {
           const sectionTop = section.offsetTop;
@@ -1627,7 +1628,8 @@
             }
 
             if (entry.target.classList.contains("contact-info")) {
-              const contactItems = entry.target.querySelectorAll(".contact-item");
+              const contactItems =
+                entry.target.querySelectorAll(".contact-item");
               contactItems.forEach((item, index) => {
                 setTimeout(() => {
                   item.classList.add("visible");
