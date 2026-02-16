@@ -1,4 +1,4 @@
-<style>
+
     /* ----- GLOBAL RESET & VARIABLES (light theme base) ----- */
     * {
       margin: 0;
@@ -369,4 +369,4 @@
       .stats-row { gap: 12px; }
       .action-bar { flex-direction: column; align-items: stretch; }
     }
-  </style>
+  
