@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MCQ Quiz</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="quiz-container">
-      <h2>MCQ Quiz</h2>
 
-      <!-- Question 1 -->
-      <div class="question">1. What is the full form of HTML?</div>
-      <div class="options">
-        <button onclick="checkAnswer(1, 'A')">
-          A) Hypertext Markup Language
-        </button>
-        <button onclick="checkAnswer(1, 'B')">
-          B) Hyertext Markup Language
-        </button>
-        <button onclick="checkAnswer(1, 'C')">
-          C) Hypertext Mrkup Language
-        </button>
-        <button onclick="checkAnswer(1, 'D')">
-          D) Hypertext Markup Languages
-        </button>
-      </div>
-      <p id="result1" class="result"></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCQ Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <!-- Question 2 -->
-      <div class="question">2. What does CSS stand for?</div>
-      <div class="options">
-        <button onclick="checkAnswer(2, 'A')">A) Cascading Style Sheets</button>
-        <button onclick="checkAnswer(2, 'B')">B) Computer Style Sheets</button>
-        <button onclick="checkAnswer(2, 'C')">C) Colorful Style Sheets</button>
-        <button onclick="checkAnswer(2, 'D')">D) Creative Style Sheets</button>
-      </div>
-      <p id="result2" class="result"></p>
+<body>
+  <div class="quiz-container">
+    <h2>MCQ Quiz</h2>
 
-      <!-- Question 3 -->
-      <div class="question">
-        3. Which programming language is used for web development?
-      </div>
-      <div class="options">
-        <button onclick="checkAnswer(3, 'A')">A) JavaScript</button>
-        <button onclick="checkAnswer(3, 'B')">B) Python</button>
-        <button onclick="checkAnswer(3, 'C')">C) C++</button>
-        <button onclick="checkAnswer(3, 'D')">D) Java</button>
-      </div>
-      <p id="result3" class="result"></p>
-
-      <!-- Question 4 -->
-      <div class="question">4. What does DOM stand for in JavaScript?</div>
-      <div class="options">
-        <button onclick="checkAnswer(4, 'A')">A) Document Object Model</button>
-        <button onclick="checkAnswer(4, 'B')">B) Data Object Model</button>
-        <button onclick="checkAnswer(4, 'C')">
-          C) Document Orientation Model
-        </button>
-        <button onclick="checkAnswer(4, 'D')">
-          D) Display Object Management
-        </button>
-      </div>
-      <p id="result4" class="result"></p>
-
-      <!-- Question 5 -->
-      <div class="question">
-        5. Which HTML tag is used to create a hyperlink?
-      </div>
-      <div class="options">
-        <button onclick="checkAnswer(5, 'A')">A) &lt;link&gt;</button>
-        <button onclick="checkAnswer(5, 'B')">B) &lt;a&gt;</button>
-        <button onclick="checkAnswer(5, 'C')">C) &lt;href&gt;</button>
-        <button onclick="checkAnswer(5, 'D')">D) &lt;hyperlink&gt;</button>
-      </div>
-      <p id="result5" class="result"></p>
-
-      <!-- Question 6 -->
-      <div class="question">
-        6. Which CSS property is used to change the text color?
-      </div>
-      <div class="options">
-        <button onclick="checkAnswer(6, 'A')">A) text-color</button>
-        <button onclick="checkAnswer(6, 'B')">B) font-color</button>
-        <button onclick="checkAnswer(6, 'C')">C) color</button>
-        <button onclick="checkAnswer(6, 'D')">D) text-style</button>
-      </div>
-      <p id="result6" class="result"></p>
-
-      <!-- Question 7 -->
-      <div class="question">
-        7. What is the correct way to comment in JavaScript?
-      </div>
-      <div class="options">
-        <button onclick="checkAnswer(7, 'A')">A) // This is a comment</button>
-        <button onclick="checkAnswer(7, 'B')">
-          B) &lt;!-- This is a comment --&gt;
-        </button>
-        <button onclick="checkAnswer(7, 'C')">C) # This is a comment</button>
-        <button onclick="checkAnswer(7, 'D')">D) * This is a comment *</button>
-      </div>
-      <p id="result7" class="result"></p>
-
-      <!-- Question 8 -->
-      <div class="question">
-        8. Which of these is NOT a JavaScript framework?
-      </div>
-      <div class="options">
-        <button onclick="checkAnswer(8, 'A')">A) React</button>
-        <button onclick="checkAnswer(8, 'B')">B) Angular</button>
-        <button onclick="checkAnswer(8, 'C')">C) Vue</button>
-        <button onclick="checkAnswer(8, 'D')">D) Django</button>
-      </div>
-      <p id="result8" class="result"></p>
-
-      <!-- Question 9 -->
-      <div class="question">9. What does API stand for?</div>
-      <div class="options">
-        <button onclick="checkAnswer(9, 'A')">
-          A) Application Programming Interface
-        </button>
-        <button onclick="checkAnswer(9, 'B')">
-          B) Automated Programming Interface
-        </button>
-        <button onclick="checkAnswer(9, 'C')">
-          C) Application Process Integration
-        </button>
-        <button onclick="checkAnswer(9, 'D')">
-          D) Automated Process Integration
-        </button>
-      </div>
-      <p id="result9" class="result"></p>
-
-      <!-- Question 10 -->
-      <div class="question">
-        10. Which HTML5 tag is used for drawing graphics?
-      </div>
-      <div class="options">
-        <button onclick="checkAnswer(10, 'A')">A) &lt;svg&gt;</button>
-        <button onclick="checkAnswer(10, 'B')">B) &lt;canvas&gt;</button>
-        <button onclick="checkAnswer(10, 'C')">C) &lt;graphics&gt;</button>
-        <button onclick="checkAnswer(10, 'D')">D) &lt;draw&gt;</button>
-      </div>
-      <p id="result10" class="result"></p>
+    <!-- Question 1 -->
+    <div class="question">1. What is the full form of HTML?</div>
+    <div class="options">
+      <button onclick="checkAnswer(1, 'A')">
+        A) Hypertext Markup Language
+      </button>
+      <button onclick="checkAnswer(1, 'B')">
+        B) Hyertext Markup Language
+      </button>
+      <button onclick="checkAnswer(1, 'C')">
+        C) Hypertext Mrkup Language
+      </button>
+      <button onclick="checkAnswer(1, 'D')">
+        D) Hypertext Markup Languages
+      </button>
     </div>
+    <p id="result1" class="result"></p>
 
-    <script src="js/index.js"></script>
-  </body>
+    <!-- Question 2 -->
+    <div class="question">2. What does CSS stand for?</div>
+    <div class="options">
+      <button onclick="checkAnswer(2, 'A')">A) Cascading Style Sheets</button>
+      <button onclick="checkAnswer(2, 'B')">B) Computer Style Sheets</button>
+      <button onclick="checkAnswer(2, 'C')">C) Colorful Style Sheets</button>
+      <button onclick="checkAnswer(2, 'D')">D) Creative Style Sheets</button>
+    </div>
+    <p id="result2" class="result"></p>
+
+    <!-- Question 3 -->
+    <div class="question">
+      3. Which programming language is used for web development?
+    </div>
+    <div class="options">
+      <button onclick="checkAnswer(3, 'A')">A) JavaScript</button>
+      <button onclick="checkAnswer(3, 'B')">B) Python</button>
+      <button onclick="checkAnswer(3, 'C')">C) C++</button>
+      <button onclick="checkAnswer(3, 'D')">D) Java</button>
+    </div>
+    <p id="result3" class="result"></p>
+
+    <!-- Question 4 -->
+    <div class="question">4. What does DOM stand for in JavaScript?</div>
+    <div class="options">
+      <button onclick="checkAnswer(4, 'A')">A) Document Object Model</button>
+      <button onclick="checkAnswer(4, 'B')">B) Data Object Model</button>
+      <button onclick="checkAnswer(4, 'C')">
+        C) Document Orientation Model
+      </button>
+      <button onclick="checkAnswer(4, 'D')">
+        D) Display Object Management
+      </button>
+    </div>
+    <p id="result4" class="result"></p>
+
+    <!-- Question 5 -->
+    <div class="question">
+      5. Which HTML tag is used to create a hyperlink?
+    </div>
+    <div class="options">
+      <button onclick="checkAnswer(5, 'A')">A) &lt;link&gt;</button>
+      <button onclick="checkAnswer(5, 'B')">B) &lt;a&gt;</button>
+      <button onclick="checkAnswer(5, 'C')">C) &lt;href&gt;</button>
+      <button onclick="checkAnswer(5, 'D')">D) &lt;hyperlink&gt;</button>
+    </div>
+    <p id="result5" class="result"></p>
+
+    <!-- Question 6 -->
+    <div class="question">
+      6. Which CSS property is used to change the text color?
+    </div>
+    <div class="options">
+      <button onclick="checkAnswer(6, 'A')">A) text-color</button>
+      <button onclick="checkAnswer(6, 'B')">B) font-color</button>
+      <button onclick="checkAnswer(6, 'C')">C) color</button>
+      <button onclick="checkAnswer(6, 'D')">D) text-style</button>
+    </div>
+    <p id="result6" class="result"></p>
+
+    <!-- Question 7 -->
+    <div class="question">
+      7. What is the correct way to comment in JavaScript?
+    </div>
+    <div class="options">
+      <button onclick="checkAnswer(7, 'A')">A) // This is a comment</button>
+      <button onclick="checkAnswer(7, 'B')">
+        B) &lt;!-- This is a comment --&gt;
+      </button>
+      <button onclick="checkAnswer(7, 'C')">C) # This is a comment</button>
+      <button onclick="checkAnswer(7, 'D')">D) * This is a comment *</button>
+    </div>
+    <p id="result7" class="result"></p>
+
+    <!-- Question 8 -->
+    <div class="question">
+      8. Which of these is NOT a JavaScript framework?
+    </div>
+    <div class="options">
+      <button onclick="checkAnswer(8, 'A')">A) React</button>
+      <button onclick="checkAnswer(8, 'B')">B) Angular</button>
+      <button onclick="checkAnswer(8, 'C')">C) Vue</button>
+      <button onclick="checkAnswer(8, 'D')">D) Django</button>
+    </div>
+    <p id="result8" class="result"></p>
+
+    <!-- Question 9 -->
+    <div class="question">9. What does API stand for?</div>
+    <div class="options">
+      <button onclick="checkAnswer(9, 'A')">
+        A) Application Programming Interface
+      </button>
+      <button onclick="checkAnswer(9, 'B')">
+        B) Automated Programming Interface
+      </button>
+      <button onclick="checkAnswer(9, 'C')">
+        C) Application Process Integration
+      </button>
+      <button onclick="checkAnswer(9, 'D')">
+        D) Automated Process Integration
+      </button>
+    </div>
+    <p id="result9" class="result"></p>
+
+    <!-- Question 10 -->
+    <div class="question">
+      10. Which HTML5 tag is used for drawing graphics?
+    </div>
+    <div class="options">
+      <button onclick="checkAnswer(10, 'A')">A) &lt;svg&gt;</button>
+      <button onclick="checkAnswer(10, 'B')">B) &lt;canvas&gt;</button>
+      <button onclick="checkAnswer(10, 'C')">C) &lt;graphics&gt;</button>
+      <button onclick="checkAnswer(10, 'D')">D) &lt;draw&gt;</button>
+    </div>
+    <p id="result10" class="result"></p>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
 </html>
